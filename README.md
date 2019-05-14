@@ -12,9 +12,9 @@ currently working on backend API.
 Currently implemented features..
 * [x] Authentication
 * [x] Add Profile (API Only)
-* [ ] Edit Profile
-* [ ] Delete Profile
-* [ ] View Profiles
+* [x] Edit Profile
+* [x] Delete Profile
+* [x] View Profiles
 * [ ] Add Comment on post
 * [ ] Remove Comment
 
