@@ -6,8 +6,9 @@ const auth = require("../../middleware/auth");
 const Post = require("../../model/Post");
 const User = require("../../model/User");
 const Profile = require("../../model/Profile");
+
 /**
- * @route       GET api/posts
+ * @route       POST api/posts
  * @description Create a post
  * @access      Private
  */
@@ -48,5 +49,39 @@ router.post(
     }
   }
 );
+
+/**
+ * @route       GET api/posts
+ * @description Get a posts
+ * @access      Private
+ */
+
+router.get("/", auth, async (req, res) => {
+  try {
+    const posts = await Post.find().sort({ date: -1 });
+
+    await res.status(200).json(posts);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send("Server Error!");
+  }
+});
+
+/**
+ * @route       GET api/posts/:post_id
+ * @description Get a post by Id
+ * @access      Private
+ */
+
+router.get("/:post_id", auth, async (req, res) => {
+  try {
+    const post = await Post.findById({ id: req.params.post_id });
+
+    await res.status(200).json(post);
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).send("Server Error!");
+  }
+});
 
 module.exports = router;
