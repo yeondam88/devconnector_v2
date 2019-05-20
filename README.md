@@ -10,6 +10,7 @@ Currently using stacks are
 currently working on backend API.
 
 Currently implemented features..
+### Back-End
 * [x] Authentication
 * [x] Add Profile (API Only)
 * [x] Edit Profile
@@ -17,6 +18,12 @@ Currently implemented features..
 * [x] View Profiles
 * [ ] Add Comment on post
 * [ ] Remove Comment
+
+### Front-End
+* [ ] Landing Page
+* [ ] Profile Page
+* [ ] Single Post Page
+* [ ] Posts Page
 
 Will be adding these things..
 * [ ] More detail in profile component 🚀
