@@ -16,8 +16,8 @@ Currently implemented features..
 * [x] Edit Profile
 * [x] Delete Profile
 * [x] View Profiles
-* [ ] Add Comment on post
-* [ ] Remove Comment
+* [x] Add Comment on post
+* [x] Remove Comment
 
 ### Front-End
 * [ ] Landing Page
